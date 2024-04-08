@@ -1,3 +1,9 @@
+![image](https://github.com/darby8/Fruits-basket-game/assets/77261607/14057a03-045a-48bd-8610-de6f3dd7c749)
+
+This is the UI for fruits basket game that is responsive and fuctioning in all devices.
+
+
+
 # TrollyGame
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
