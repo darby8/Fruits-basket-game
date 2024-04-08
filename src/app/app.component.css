@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "myFirstFont";
+    src: url("../assets/fonts/LibreBaskerville-Italic.ttf");
+}
+@font-face {
+    font-family: "mysecFont";
+    src: url("../assets/fonts/LibreBaskerville-Regular.ttf");
+}
+
+
+
+.gameBox{
+    width: 97vw;
+    height: 96vh;
+}
+
+.container{
+    /* width: 50vw;
+    height: 75vh;
+
+    background: #CADEFC;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+    margin: auto; */
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    background: #CADEFC;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+    margin: auto;
+    height: 689px;
+    /* background-image: linear-gradient(#e3e3e3, #cad0ff); */
+    margin-bottom: 80px;
+    /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    
+}
+
+
+.headings{
+    font-family: "myFirstFont";
+    position: relative;
+    margin: auto;
+    top: 20px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameBlockTime{
+    max-width: 200px;
+        background: #0a1647;
+            width: 133px;
+            height: 20px;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+}
+.gameBlock{
+        background: #0a1647;
+        width: 75px;
+        height: 20px;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+}
+
+.header{
+        font-family: "mysecFont";
+       max-width: 440px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        padding-top: 5px;
+}
+img{
+    width: 89%;
+}
+.points{
+    font-size: 16px;
+   margin-top: 5px;
+    color: white;
+}
+span{
+    margin-right: 2px;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background: #c52f2f;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+}
+.buttons{
+   margin-top: 5px;
+    position: absolute;
+
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@media (max-width:500px) {
+    .points{
+        font-size: 16px;
+    }
+}
+.trolly{
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    float: left;
+    bottom: 0px;
+        
+}
+  .clock {
+      width: 22px ;
+
+  }
+@media (max-width:343px) {
+    .clock{
+        width: 33px !important;
+       
+    }
+        .points {
+            font-size: 12px;
+        }
+    
+}
+
+
+
+/* This is the animation for falling fruits and widht of dynamic created element */
+
+.fruit{
+    width: 40px;
+    height: 40px;
+    animation: moveDown 2s forwards;
+ 
+    transition: transform 2s linear;
+}
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(650px);
+    }
+   
+}
+
+.retry{
+        max-width: 270px;
+        height: 130px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        position: relative;
+        margin: auto;
+        top: 30%;
+        background-color: white;
+        text-align: center;
+}
+
+.retryGame{
+    font-family: "mysecFont";
+    font-weight: 600;
+    font-size: 18px;
+    /* margin: 12px */
+}
+.score{
+font-family: "mysecFont";
+font-size: 16px;
+font-weight: 600;
+/* margin: 12px */
+}
+.retryButton{
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px;
+    background-color: #1A8FE3;
+    color: white;
+    cursor: pointer;
+}
